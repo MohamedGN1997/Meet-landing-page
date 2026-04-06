@@ -1,0 +1,11 @@
+*{margin:0px;padding:0px;box-sizing:border-box;}
+:root{
+    --c-grey-500:rgb(77, 79, 98);
+    --c-grey-400:rgb(106, 113, 120);
+    --c-white:rgb(255,255,255);
+    --c-red:rgb(234, 84, 84);
+    --c-cyan:rgb(68, 211, 210);
+    --c-blue:rgb(84, 158, 242);
+    --c-orange:rgb(252, 174, 74);
+}
+body{min-height: 100vh; display: flex;}
