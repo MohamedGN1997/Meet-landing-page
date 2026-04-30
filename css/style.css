@@ -10,10 +10,11 @@
     --c-white:rgb(255,255,255);
 }
 body{max-width: 1440px; min-height: 100vh;margin: 0px auto;}
-body :is(header, main, footer){max-width: 375px;margin: 0px auto;border: 1px solid red;}
+body :is(header, main, footer){max-width: 375px;margin: 0px auto;}
 body header .logo{padding-top:48px;}
 body header .logo img{margin: 0px auto;display: block;}
-body header .hero-page .img-collage{width: 100%;height: 160px;background-image: url('../images/header-combined-image-mobile-version.png');background-repeat: no-repeat;background-size: 100% 100%;}
+body header .hero-page .img-collage{width: 100%;height: 160px;margin-top: 64px;}
+body header .hero-page .img-collage .img-center{height: 100%;width: 100%;background-image: url('/images/combined-image-mobile.png');  background-repeat: no-repeat;background-size: contain;}
 body :is(header, main, footer) .container{max-width: 311px;margin: 0px auto;}
 body header .container .content {margin-top: 48px;}
 body header .container .content :is(h1.text-title, p.text-description){text-align: center;font-family: "Red Hat Display", sans-serif;}
@@ -23,4 +24,21 @@ body header .container .content button.btn{display: block;margin: 0px auto;borde
 body header .container .content button.btn-download{background-color: var(--c-cyan-600);}
 body header .container .content button.btn-download .btn-version{color: var(--c-cyan-300);font-family: "Red Hat Display", sans-serif;font-size: 16px;margin-left: 4px;}
 body header .container .content button.btn-info{margin-top: 16px;font-size: 16px;font-weight: 900;background-color: var(--c-purple-600);}
-
+/* end header */
+/* start main */
+body main section .container .number-1{margin: 64px 0px;}
+body main section .container .number svg{display: block;margin: 0px auto;}
+body main section .container .image-collage{display: grid;grid-template-columns: 147.5px 147.5px;grid-template-rows: 144px 144px;gap: 16px;margin-bottom: 64px;}
+body main section .container .image-collage .img{display: block;width: 100%;height: 100%;object-fit: cover;}
+body main section .container .content span, h1, p{font-family: "Red Hat Display", sans-serif;text-align: center;display: block;}
+body main section .container .content span.text-subtitle{letter-spacing: 4px;font-size: 12px; font-weight: 900;color: var(--c-cyan-600);}
+body main section .container .content h1.text-title{font-size: 32px; font-weight: 900;color: var(--c-slate-900);line-height: 110%;margin: 16px 0px 32px 0px;}
+body main section .container .content p.text-description{font-size: 16px; font-weight: 500;color: var(--c-slate-600);line-height: 150%;margin-bottom:64px;font-weight: 500;}
+/* end main */
+/* start footer */
+body footer {background-image: url('/images/bg-footer-mobile.png');background-repeat: no-repeat;background-size: cover;}
+body footer .container .number-2 svg{display: block;margin: 0px auto;}
+body footer .container .content h1.text-title, p.text-description{font-family: 'Red Hat Display', sans-serif;text-align: center;display: block;color: var(--c-white);}
+body footer .container .content h1.text-title{line-height: 110%;font-size: 32px;font-weight: 900;}
+body footer .container .content p.text-description{line-height: 150%;font-size: 16px;font-weight: 500;}
+/* end footer */
