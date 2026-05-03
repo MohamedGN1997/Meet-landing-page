@@ -1,0 +1,30 @@
+/* Tablet Styles */
+@media (min-width:768px){
+    body :is(header, main, footer){max-width: 768px;margin: 0px auto;}
+    body header .hero-page .img-collage .img-center{background-image: url('/images/header-combined-image-tablet.png');}
+    body :is(header, main, footer) .container{max-width: 680px;}
+    body header .container .content {max-width: 448.5px;margin-left: auto;margin-right: auto;}
+    body header .container .content .btn-info-download {display: flex;justify-content: center;align-items: center;gap: 17px;}
+    body header .container .content .btn-info-download .btn {display: inline-block;margin: 0px;}
+    body header .container .content .btn-info-download .btn-info{margin-top: 0px;}
+    body main section .container .image-collage{display: grid;grid-template-columns: 1fr 1fr 1fr 1fr;grid-template-rows: 1fr; gap: 24px;}
+    body main section .container .content{max-width: 544px;margin: auto;}
+    body footer {background-image: url('/images/bg-footer-tablet.png');}
+}
+/* desktop styles */
+@media (min-width:1440px){
+    body :is(header, main, footer){max-width: 100%;margin: 0px auto;}
+    body :is(header, main, footer) .container{max-width: 1220px;}
+    body header .hero-page .img-collage{height: auto;display: flex;justify-content: space-between;align-items: center;}
+    body header .hero-page .img-collage .img-center{display: none;}
+    body header .hero-page .img-collage :is(.img-left, .img-right){height: 303px;width: 394px;background-repeat: no-repeat;background-size: 100% 100%;}
+    body header .hero-page .img-collage .img-left {display: block;background-image: url('/images/header-faces-left.png');}
+    body header .hero-page .img-collage .img-right{display: block;background-image: url('/images/header-faces-right.png');}
+    body header .container .content {margin-top: -303px;}
+    body main section .container .content p.text-description{text-align: center;}
+    body footer {background-image: url('/images/bg-footer-descTop.png');}
+    body footer .container .content{display: flex;justify-content: center;align-items: center;}
+    body footer .container .content h1.text-title, p.text-description{text-align: left;}
+    body footer .container .content h1.text-title{max-width: 445px;}
+    body footer .container .content p.text-description{max-width: 335px;}
+}
